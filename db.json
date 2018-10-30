@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "one",
+      "author": "eleven"
+    },
+    {
+      "title": "three",
+      "author": "thirteen",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "four",
+      "author": "fourteen"
+    },
+    {
+      "id": 5,
+      "title": "five",
+      "author": "fifteen"
+    },
+    {
+      "id": 6,
+      "title": "six",
+      "author": "sixteen"
+    },
+    {
+      "id": 7,
+      "title": "seven",
+      "author": "seventeen"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

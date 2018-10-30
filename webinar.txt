@@ -1,0 +1,56 @@
+JSON строковое представление JavaScript-объекта
+	JSON.stringify()
+	JSON.parse()
+
+Инспектор -> Network 
+	Disable cache
+	No throttling
+
+AJAX (Asynchronous JavaScript and XML) 
+    любое общение с сервером без перезагрузки страницы
+		Элементы интерфейса
+		Динамическая подгрузка данных
+		Живой поиск
+
+Fetch API  XMLHttpRequest нового поколения на promise		
+	fetch(url, options)
+		.then(response  => {})
+		.then(data => {})
+		.catch(error => {})
+		
+		response
+			if(response.ok) return response.json()
+									/*	.json()  
+			бинарный код				.blob()  
+			символьный код				.text()  
+			объект браузера FormData	.formData()   https://developer.mozilla.org/en-US/docs/Web/API/FormData
+			потоковый контент .ogg		.arrayBuffer()  
+									*/
+			throw new Error (response.statusText)
+			
+		Headers
+
+https://raw.githubusercontent.com/iancoleman/cia_world_factbook_api/master/data/factbook.json
+	https://codepen.io/Gorbulin/pen/RemQzp?editors=1011
+https://github.com/typicode/json-server
+		
+Протоколы передачи данных
+TCP/IP   
+TCP (Transmission Control Protocol) порядок пакетов
+IP (Internet Protocol)  структура пакета
+	(UDP - непрерывный поток, не гарантирующий целостность набора пакетов)
+		https://www.tutorialspoint.com/http/index.htm 
+		Котеров - PHP 7. Наиболее полное руководство (3-е издание) - 2016
+		
+HTTP:80 vs HTTPS:443		
+	http://fecore.net.ua/javascript/pages/theory/module-10-1.html
+	сертификаты недорого! https://www.gogetssl.com/  
+	настройка https https://seoprofy.ua/blog/optimizaciya-sajtov/https-setup
+
+API (интерфейс прикладного программирования)	
+REST стиль архитектуры
+RESTful API  клиент-сервер на основе HTTP запросах CRUD (POST, GET, PUT, DELETE) 
+
+HTTP-метод -> Заголовок  -> Путь  -> Тело 
+	Заголовок -> Accept (тип контента) -> Content-Type (MIME)
+Коды ответов
